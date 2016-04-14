@@ -1,7 +1,7 @@
 # FlaskApp2
 This is another version of our FeelsApp with an updated and more modular structure of the app.
 
-This app was created with flask via virtualenv following tutorials created by [Lalith Polepeddi](https://github.com/lpolepeddi) before being modified. - *P.s: Thanks Lalith!*
+Also, this app was created with flask via virtualenv following tutorials created by [Lalith Polepeddi](https://github.com/lpolepeddi) before being modified. - *P.s: Thanks Lalith!*
 
 ### **Before cloing this git!**  
 Here are some linux-based commands required to have the app set up for development. 
@@ -50,15 +50,16 @@ $ pip install flask-mail
 ```
 
 ##### ***Finally...*** 
-You may clone this git to your ***isolated development*** `flaskapp` *folder*.  
+You may clone this git to your ***isolated development*** `flaskapp folder`.  
 
 ##### ***Don't forget...***  
-To continue developing this app in an ***isolated environment*** in the `flaskapp` folder, remember always to do the following command:
+To continue developing this app in an ***isolated environment*** in the `flaskapp folder`, remember to always do the following command:
 ```sh
 $ . bin/activate
 ```  
 ###### ***Also...***  
 To have the contact page notify you at your personal email address, remember to change the following lines in [routes.py](/routes.py) to an actual existing email login info.
 ```python
-app.config["MAIL_USERNAME"]='your-username@gmail.com'  app.config["MAIL_PASSWORD"]='your-password'
-```# FlaskApp2
+app.config["MAIL_USERNAME"]='your-username@gmail.com'  
+app.config["MAIL_PASSWORD"]='your-password'
+```
