@@ -47,7 +47,39 @@ Here are some additional flask components/frameworks that must be installed to h
 ```sh
 $ pip install flask-wtf
 $ pip install flask-mail
+$ pip install flask-sqlalchemy
 ```
+You may also need to install mysql to have a database running.  
+First, check to see if your system already has MySQL:
+
+```sh
+$ mysql --version
+```
+If the command was not found, you'll need to install MySQL.  
+There are several ways to do so. You may follow the instructions below:  
+
+##### First Method
+1. Via Homebrew:  
+ - type the following command to install Homebrew.
+    ```sh
+    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent com/Homebrew/install/master/install)"
+    ```
+    Hit agree to install and then hit return to continue in the terminal when prompted.
+- After Homebrew is installed, do the two following commands to check if homebrew has been successfully installed, then get commonly used packages:
+	```sh
+	$ brew doctor
+	$ brew install wet
+	```
+- Finally, install mysql:
+ 	```sh
+ 	$ brew install mysql
+ 	```
+
+##### Second Method
+2. Install via apt-get commands, like such:  
+	```sh
+	$ sudo apt-get install mysql-server mysql-client
+	```
 
 ##### ***Finally...*** 
 You may clone this git to your ***isolated development*** `flaskapp folder`.  
